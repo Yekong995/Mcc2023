@@ -64,8 +64,7 @@ void subsetsSum(std::vector<ll>& nums, ll power) {
                 sum += nums[j];
             }
         }
-        // ans_modulo = (ans_modulo + exponentiation_modulo(sum, power)) % modulo;
-        cout << sum << endl;
+        ans_modulo = (ans_modulo + exponentiation_modulo(sum, power)) % modulo;
     }
 }
 
